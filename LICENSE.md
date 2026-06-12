@@ -17,4 +17,4 @@ Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
 
 To attribute, cite the associated manuscript:
 
-Rezvanjoo, H. (2026). Business Intelligence Utilisation and Decision-Making Quality in Kent SMEs. *Systems* (under review). Data available at https://github.com/[your-username]/BI-decision-quality
+Rezvanjoo, H. (2026). Business Intelligence Utilisation and Decision-Making Quality in Kent SMEs. *Systems* (under review). Data available at https://github.com/hoda834/BI-decision-quality
