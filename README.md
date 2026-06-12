@@ -1,9 +1,9 @@
-# BI Utilisation and Decision-Making Quality in Kent SMEs
+# Business Intelligence as a Differentiated Decision-Support Capability: A Multi-Level Analysis of SMEs' Decision-Making Quality
 
-Data and analysis files supporting the manuscript "Business Intelligence Utilisation and Decision-Making Quality in Kent SMEs", submitted to *Systems* (MDPI).
+Data and analysis files supporting the manuscript "Business Intelligence as a Differentiated Decision-Support Capability: A Multi-Level Analysis of SMEs' Decision-Making Quality". The study examines business intelligence utilisation and perceived decision-making quality in small and medium-sized enterprises in Kent, United Kingdom.
 
 **Author:** Hoda Rezvanjoo, DBA
-**ORCID:** https://orcid.org/0009-0006-3882-2669
+**ORCID:** <https://orcid.org/0009-0006-3882-2669>
 **IRB approval:** 2025-006
 
 ## Contents
@@ -19,7 +19,7 @@ Data and analysis files supporting the manuscript "Business Intelligence Utilisa
 
 ## Study summary
 
-A cross-sectional survey of 186 managers in small and medium-sized enterprises in Kent, United Kingdom, examining how business intelligence utilisation at the strategic, tactical, and operational levels relates to perceived decision-making quality. Analyses include per-construct Principal Axis Factoring, Spearman correlations, multiple regression on saved factor scores with diagnostics, and a robustness regression on composite means.
+A cross-sectional survey of 186 managers in small and medium-sized enterprises in Kent, United Kingdom, examining how business intelligence utilisation at the strategic, tactical, and operational levels relates to perceived decision-making quality. Analyses include per-construct Principal Axis Factoring, a combined Harman single-factor test, Spearman correlations, multiple regression on saved factor scores with diagnostics, and a robustness regression on composite means.
 
 ## Anonymisation
 
@@ -27,8 +27,8 @@ Submission timestamps were removed prior to deposit. No names, contact details, 
 
 ## Reproducing the analysis
 
-1. Open `SPSS_syntax_verification.sps` in IBM SPSS Statistics (v[add your version]).
-2. Load `data_anonymised.csv` as the active dataset.
+1. Open `SPSS_syntax_verification.sps` in IBM SPSS Statistics.
+2. Load `data_anonymised.csv` as the active dataset. The `GET DATA` command at the top of the syntax points to a local file path, so update that path to wherever you have saved `data_anonymised.csv`.
 3. Run the syntax in full. It produces the frequencies, descriptives, correlations, factor analyses (including the Harman single-factor test), and both regression models reported in the manuscript.
 
 `data_processed.csv` contains the derived variables this syntax generates, included for verification without rerunning.
