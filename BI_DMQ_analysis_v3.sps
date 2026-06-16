@@ -128,8 +128,8 @@ REGRESSION
   /DEPENDENT DMQ31
   /METHOD=ENTER Strategic_Factor Tactical_Factor Operational_Factor.
 
-* Expected (Section 4.4): R2 = .559; Operational beta = .347 (p<.001),.
-* Tactical = .252 (p=.002), Strategic = .236 (p=.003).
+* Expected (Section 4.4): R2 = .561; Operational beta = .370 (p<.001),.
+* Strategic = .238 (p=.003), Tactical = .228 (p=.006).
 
 * ===================================================================.
 * NOTE on CFA and HTMT (Section 4.2, Discriminant Validity).
