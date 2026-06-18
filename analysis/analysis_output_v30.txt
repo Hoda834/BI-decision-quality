@@ -1,0 +1,622 @@
+
+======================================================================
+BI-DMQ ANALYSIS v30  |  n = 186 (full sample)
+======================================================================
+
+Loaded BI_DMQ_data_v30.sav
+  rows = 186, columns = 21
+
+======================================================================
+1. DATA QUALITY CHECKS
+======================================================================
+
+--- Missing values in Likert items ---
+  Total missing across all 17 Likert items: 0
+
+--- Likert range checks (expected 1-5) ---
+  Strategic_BI_Availability           min=1 max=5
+  Strategic_BI_Alternatives           min=1 max=5
+  Strategic_BI_Alignment              min=1 max=5
+  Tactical_BI_Availability            min=1 max=5
+  Tactical_BI_Resource_Alloc          min=1 max=5
+  Tactical_BI_Data_Decisions          min=1 max=5
+  Operational_BI_Availability         min=1 max=5
+  Operational_BI_Agility              min=1 max=5
+  Operational_BI_Quality              min=1 max=5
+  BI_Improves_Decisions               min=1 max=5
+  BI_Speed_Accuracy                   min=1 max=5
+  BI_Data_Inform                      min=1 max=5
+  BI_Alternative_Solutions            min=1 max=5
+  BI_Cost_Barrier                     min=1 max=5
+  BI_Training_Limit                   min=1 max=5
+  BI_Flexibility_Issue                min=1 max=5
+  BI_Data_Integration_Issue           min=1 max=5
+
+--- Within-respondent SD across 13 BI/DMQ items ---
+  Cases with SD = 0 (perfect straight-line): 15
+  IDs: [np.int64(55), np.int64(57), np.int64(58), np.int64(59), np.int64(119), np.int64(120), np.int64(121), np.int64(122), np.int64(173), np.int64(175), np.int64(176), np.int64(177), np.int64(178), np.int64(181), np.int64(182)]
+
+--- Demographic frequencies ---
+
+  Company_Size:
+Company_Size
+1.0    63
+2.0    72
+3.0    51
+
+  Job_Position:
+Job_Position
+1.0    13
+2.0    22
+3.0    37
+4.0    36
+5.0    78
+
+  Industry:
+Industry
+1.0    14
+2.0    51
+3.0    53
+4.0    31
+5.0    37
+
+======================================================================
+2. COMPOSITE VARIABLES
+======================================================================
+
+Computed: Strategic_Mean, Tactical_Mean, Operational_Mean, DMQ_Mean,
+          Challenges_Mean, Overall_BI_Mean, Managerial_BI_Mean
+
+======================================================================
+3. DESCRIPTIVE STATISTICS
+======================================================================
+
+--- Item-level descriptives ---
+                              mean    std  min  max   skew  kurtosis
+Strategic_BI_Availability    3.645  0.955  1.0  5.0 -0.705     0.410
+Strategic_BI_Alternatives    3.742  0.917  1.0  5.0 -0.739     0.528
+Strategic_BI_Alignment       3.812  0.871  1.0  5.0 -0.566     0.492
+Tactical_BI_Availability     3.710  0.901  1.0  5.0 -0.556     0.013
+Tactical_BI_Resource_Alloc   3.769  0.829  1.0  5.0 -0.639     0.906
+Tactical_BI_Data_Decisions   3.909  0.830  1.0  5.0 -0.859     1.395
+Operational_BI_Availability  3.790  0.955  1.0  5.0 -0.734     0.316
+Operational_BI_Agility       3.849  0.850  1.0  5.0 -0.559     0.387
+Operational_BI_Quality       3.828  0.865  1.0  5.0 -0.772     0.858
+BI_Improves_Decisions        3.849  0.863  1.0  5.0 -0.571     0.079
+BI_Speed_Accuracy            3.774  0.966  1.0  5.0 -0.589    -0.088
+BI_Data_Inform               3.935  0.880  1.0  5.0 -0.836     0.691
+BI_Alternative_Solutions     3.710  0.895  1.0  5.0 -0.261    -0.444
+BI_Cost_Barrier              3.522  1.041  1.0  5.0 -0.479    -0.211
+BI_Training_Limit            3.763  0.963  1.0  5.0 -0.463    -0.375
+BI_Flexibility_Issue         3.328  0.984  1.0  5.0 -0.182    -0.241
+BI_Data_Integration_Issue    3.484  0.908  1.0  5.0 -0.280    -0.008
+  [saved: tables_v30/T1_item_descriptives.csv]
+
+--- Composite-level descriptives ---
+                     mean    std    min  max   skew  kurtosis
+Strategic_Mean      3.733  0.773  1.000  5.0 -0.725     1.015
+Tactical_Mean       3.796  0.706  1.000  5.0 -0.750     1.943
+Operational_Mean    3.823  0.743  1.333  5.0 -0.685     0.507
+DMQ_Mean            3.817  0.745  1.500  5.0 -0.642     0.371
+Challenges_Mean     3.524  0.681  1.750  5.0 -0.103    -0.099
+Overall_BI_Mean     3.784  0.664  1.222  5.0 -0.861     1.748
+Managerial_BI_Mean  3.764  0.693  1.000  5.0 -0.809     1.950
+  [saved: tables_v30/T2_composite_descriptives.csv]
+
+======================================================================
+4. RELIABILITY (CRONBACH ALPHA)
+======================================================================
+  Strategic     alpha = 0.800  k = 3
+  Tactical      alpha = 0.768  k = 3
+  Operational   alpha = 0.781  k = 3
+  DMQ           alpha = 0.845  k = 4
+  Challenges    alpha = 0.650  k = 4
+  Overall_BI    alpha = 0.902  k = 9
+  Managerial_BI alpha = 0.873  k = 6
+  [saved: tables_v30/T3_reliability.csv]
+
+======================================================================
+5. KMO & BARTLETT
+======================================================================
+  KMO (overall)          = 0.936
+  Bartlett's test of sphericity:
+     chi2 = 1330.53, p = 4.569e-227
+
+======================================================================
+6. EFA (PAF, PROMAX) ON 13 BI + DMQ ITEMS
+======================================================================
+
+Eigenvalues (initial):
+[7.074 0.848 0.749 0.654 0.625 0.562 0.521 0.417 0.369 0.344 0.308 0.272
+ 0.256]
+
+Pattern matrix (Promax-rotated loadings):
+                                F1     F2     F3     F4
+Strategic_BI_Availability    0.827  0.238 -0.129 -0.084
+Strategic_BI_Alternatives    0.513 -0.069  0.016  0.473
+Strategic_BI_Alignment       0.404 -0.120  0.165  0.429
+Tactical_BI_Availability     0.742 -0.040  0.271 -0.061
+Tactical_BI_Resource_Alloc   0.112  0.006  0.105  0.664
+Tactical_BI_Data_Decisions  -0.124  0.088 -0.221  1.050
+Operational_BI_Availability  0.115  0.652 -0.107  0.173
+Operational_BI_Agility      -0.090  0.846  0.074  0.031
+Operational_BI_Quality       0.415  0.715 -0.106 -0.150
+BI_Improves_Decisions        0.064  0.401  0.204  0.275
+BI_Speed_Accuracy           -0.086  0.504  0.579 -0.081
+BI_Data_Inform              -0.157  0.220  0.602  0.221
+BI_Alternative_Solutions     0.175 -0.135  1.020 -0.204
+  [saved: tables_v30/T4_EFA_pattern_matrix.csv]
+
+Variance explained:
+               F1     F2     F3     F4
+SS_loadings  1.95  2.218  1.985  2.188
+Prop_var     0.15  0.171  0.153  0.168
+Cum_var      0.15  0.321  0.473  0.642
+  [saved: tables_v30/T5_EFA_variance.csv]
+
+======================================================================
+7. HARMAN SINGLE-FACTOR TEST (CMV)
+======================================================================
+  Single factor explains 54.42% of variance
+  (Threshold for concern: > 50%)
+  -> ABOVE threshold: report and triangulate with sensitivity analysis
+
+======================================================================
+8. CFA MODELS
+======================================================================
+
+CFA: Four-factor (theoretical model)
+  chi2   = 104.6171
+  df     = 59.0000
+  p      = 0.0002
+  CFI    = 0.9649
+  TLI    = 0.9535
+  RMSEA  = 0.0646
+  SRMR   = NA
+  AIC    = 62.8751
+  BIC    = 166.0990
+  [saved: tables_v30/T6_CFA_4factor_loadings.csv]
+
+AVE and CR per construct:
+             k_items    AVE     CR  sqrt_AVE  min_loading  max_loading
+factor                                                                
+DMQ                4  0.578  0.845     0.761        0.687        0.800
+Operational        3  0.548  0.784     0.740        0.720        0.763
+Strategic          3  0.580  0.805     0.761        0.706        0.832
+Tactical           3  0.530  0.771     0.728        0.697        0.755
+  [saved: tables_v30/T7_AVE_CR.csv]
+
+Fornell-Larcker matrix (diagonal = sqrt(AVE), off = factor corr):
+             Strategic  Tactical  Operational    DMQ
+Strategic        0.761     0.958        0.813  0.845
+Tactical         0.958     0.728        0.897  0.880
+Operational      0.813     0.897        0.740  0.894
+DMQ              0.845     0.880        0.894  0.761
+  [saved: tables_v30/T8_Fornell_Larcker.csv]
+
+Fornell-Larcker breaches: Strategic-Tactical, Operational-Strategic, Operational-Tactical, DMQ-Strategic, DMQ-Tactical, DMQ-Operational
+
+CFA: One-factor (CMV comparison)
+  chi2   = 153.7423
+  df     = 65.0000
+  p      = 0.0000
+  CFI    = 0.9316
+  TLI    = 0.9180
+  RMSEA  = 0.0859
+  SRMR   = NA
+  AIC    = 50.3469
+  BIC    = 134.2163
+
+CFA: Two-factor (Overall BI + DMQ)
+  chi2   = 132.8136
+  df     = 64.0000
+  p      = 0.0000
+  CFI    = 0.9470
+  TLI    = 0.9354
+  RMSEA  = 0.0762
+  SRMR   = NA
+  AIC    = 52.5719
+  BIC    = 139.6671
+
+CFA: Three-factor (Managerial + Operational + DMQ)
+  chi2   = 109.6105
+  df     = 62.0000
+  p      = 0.0002
+  CFI    = 0.9633
+  TLI    = 0.9539
+  RMSEA  = 0.0644
+  SRMR   = NA
+  AIC    = 56.8214
+  BIC    = 150.3680
+
+--- CFA fit comparison ---
+             chi2    df    p    CFI    TLI  RMSEA  SRMR     AIC      BIC
+model                                                                   
+4-factor  104.617  59.0  0.0  0.965  0.954  0.065   NaN  62.875  166.099
+3-factor  109.611  62.0  0.0  0.963  0.954  0.064   NaN  56.821  150.368
+2-factor  132.814  64.0  0.0  0.947  0.935  0.076   NaN  52.572  139.667
+1-factor  153.742  65.0  0.0  0.932  0.918  0.086   NaN  50.347  134.216
+  [saved: tables_v30/T9_CFA_fit_comparison.csv]
+
+======================================================================
+9. HTMT (DISCRIMINANT VALIDITY)
+======================================================================
+
+HTMT matrix:
+             Strategic  Tactical  Operational    DMQ
+Strategic        1.000     0.959        0.830  0.852
+Tactical         0.959     1.000        0.903  0.887
+Operational      0.830     0.903        1.000  0.884
+DMQ              0.852     0.887        0.884  1.000
+  [saved: tables_v30/T10_HTMT.csv]
+
+HTMT > 0.85 (strict) flagged:
+  Strategic     - Tactical       HTMT = 0.959 (also > 0.90 lenient)
+  Operational   - Tactical       HTMT = 0.903 (also > 0.90 lenient)
+  DMQ           - Strategic      HTMT = 0.852
+  DMQ           - Tactical       HTMT = 0.887
+  DMQ           - Operational    HTMT = 0.884
+
+======================================================================
+10. CORRELATIONS
+======================================================================
+
+--- Pearson correlations among composites ---
+                    Strategic_Mean  Tactical_Mean  Operational_Mean  DMQ_Mean  Challenges_Mean  Overall_BI_Mean  Managerial_BI_Mean
+Strategic_Mean               1.000          0.753             0.657     0.698            0.404            0.901               0.942
+Tactical_Mean                0.753          1.000             0.703     0.714            0.416            0.910               0.930
+Operational_Mean             0.657          0.703             1.000     0.717            0.394            0.878               0.725
+DMQ_Mean                     0.698          0.714             0.717     1.000            0.382            0.792               0.754
+Challenges_Mean              0.404          0.416             0.394     0.382            1.000            0.452               0.438
+Overall_BI_Mean              0.901          0.910             0.878     0.792            0.452            1.000               0.966
+Managerial_BI_Mean           0.942          0.930             0.725     0.754            0.438            0.966               1.000
+  [saved: tables_v30/T11_pearson_correlations.csv]
+
+--- Spearman correlations among composites ---
+                    Strategic_Mean  Tactical_Mean  Operational_Mean  DMQ_Mean  Challenges_Mean  Overall_BI_Mean  Managerial_BI_Mean
+Strategic_Mean               1.000          0.694             0.594     0.638            0.419            0.870               0.927
+Tactical_Mean                0.694          1.000             0.658     0.635            0.416            0.877               0.903
+Operational_Mean             0.594          0.658             1.000     0.677            0.356            0.858               0.668
+DMQ_Mean                     0.638          0.635             0.677     1.000            0.364            0.735               0.682
+Challenges_Mean              0.419          0.416             0.356     0.364            1.000            0.459               0.450
+Overall_BI_Mean              0.870          0.877             0.858     0.735            0.459            1.000               0.949
+Managerial_BI_Mean           0.927          0.903             0.668     0.682            0.450            0.949               1.000
+  [saved: tables_v30/T12_spearman_correlations.csv]
+
+--- p-values for Pearson correlations with DMQ_Mean ---
+  Strategic_Mean            r = 0.698  p = 1.766e-28
+  Tactical_Mean             r = 0.714  p = 2.444e-30
+  Operational_Mean          r = 0.717  p = 1.056e-30
+  Challenges_Mean           r = 0.382  p = 7.743e-08
+  Overall_BI_Mean           r = 0.792  p = 2.51e-41
+  Managerial_BI_Mean        r = 0.754  p = 2.23e-35
+
+======================================================================
+11. CONTROL VARIABLE DUMMY CODING
+======================================================================
+Reference categories: Company_Size = <50, Job_Position = CEO, Industry = Manufacturing
+
+======================================================================
+12. REGRESSION MODELS (n = 186)
+======================================================================
+
+M1: Controls only
+  n = 186
+  R^2 = 0.1228   adj.R^2 = 0.0726
+  F = 2.449   model p = 0.00924
+  Durbin-Watson = 1.835
+  max VIF = 4.779
+  max |stud. resid.| = 3.023
+  max Cook's D = 0.0777
+  max leverage = 0.1471
+
+Coefficients (standard + HC3 robust + standardised):
+          term         b       se         t        p    ci_low   ci_high   se_HC3     t_HC3    p_HC3  std_beta
+      CS_50_99  0.320976 0.132134  2.429162 0.016145  0.060194  0.581758 0.133357  2.406883 0.016089  0.210315
+    CS_100_249  0.144518 0.142919  1.011187 0.313323 -0.137549  0.426584 0.157038  0.920272 0.357430  0.086726
+  JP_SeniorMgr  0.295841 0.258955  1.142442 0.254831 -0.215236  0.806918 0.302193  0.978981 0.327589  0.128520
+  JP_MiddleMgr  0.176018 0.242744  0.725120 0.469347 -0.303063  0.655100 0.282943  0.622098 0.533877  0.094521
+     JP_OpsMgr  0.312612 0.237848  1.314335 0.190453 -0.156808  0.782032 0.263833  1.184885 0.236063  0.166143
+      JP_Other  0.130359 0.233173  0.559067 0.576831 -0.329834  0.590553 0.289021  0.451038 0.651962  0.086533
+    IND_Retail -0.587671 0.230658 -2.547801 0.011701 -1.042901 -0.132441 0.208482 -2.818806 0.004820 -0.352667
+   IND_Service -0.335034 0.224190 -1.494419 0.136867 -0.777498  0.107431 0.182721 -1.833580 0.066716 -0.203438
+IND_Technology -0.162780 0.240804 -0.675986 0.499942 -0.638034  0.312474 0.184391 -0.882799 0.377345 -0.081607
+     IND_Other -0.402307 0.240582 -1.672226 0.096267 -0.877121  0.072508 0.217893 -1.846349 0.064842 -0.216038
+
+VIF:
+  CS_50_99                        VIF = 1.495
+  CS_100_249                      VIF = 1.467
+  JP_SeniorMgr                    VIF = 2.525
+  JP_MiddleMgr                    VIF = 3.390
+  JP_OpsMgr                       VIF = 3.188
+  JP_Other                        VIF = 4.779
+  IND_Retail                      VIF = 3.822
+  IND_Service                     VIF = 3.697
+  IND_Technology                  VIF = 2.907
+  IND_Other                       VIF = 3.330
+
+M2: Three BI levels (PRIMARY, no controls)
+  n = 186
+  R^2 = 0.6298   adj.R^2 = 0.6237
+  F = 103.215   model p = 4.581e-39
+  Durbin-Watson = 2.264
+  max VIF = 2.804
+  max |stud. resid.| = 3.303
+  max Cook's D = 0.1499
+  max leverage = 0.0967
+
+Coefficients (standard + HC3 robust + standardised):
+            term        b       se        t            p   ci_low  ci_high   se_HC3    t_HC3    p_HC3  std_beta
+  Strategic_Mean 0.254226 0.068674 3.701901 2.834633e-04 0.118725 0.389726 0.072274 3.517516 0.000436  0.263745
+   Tactical_Mean 0.277915 0.079728 3.485798 6.149149e-04 0.120605 0.435224 0.081095 3.427011 0.000610  0.263268
+Operational_Mean 0.360098 0.066062 5.450929 1.613712e-07 0.229752 0.490443 0.086241 4.175460 0.000030  0.359171
+
+VIF:
+  Strategic_Mean                  VIF = 2.496
+  Tactical_Mean                   VIF = 2.804
+  Operational_Mean                VIF = 2.135
+
+M3: Three BI levels + controls (robustness)
+  n = 186
+  R^2 = 0.6483   adj.R^2 = 0.6218
+  F = 24.393   model p = 1.643e-32
+  Durbin-Watson = 2.253
+  max VIF = 4.943
+  max |stud. resid.| = 3.126
+  max Cook's D = 0.0767
+  max leverage = 0.1875
+
+Coefficients (standard + HC3 robust + standardised):
+            term         b       se         t        p    ci_low  ci_high   se_HC3     t_HC3    p_HC3  std_beta
+        CS_50_99 -0.015926 0.087567 -0.181869 0.855900 -0.188770 0.156919 0.090239 -0.176484 0.859914 -0.010435
+      CS_100_249 -0.131406 0.093405 -1.406843 0.161278 -0.315773 0.052961 0.104596 -1.256315 0.209002 -0.078858
+    JP_SeniorMgr  0.096529 0.166952  0.578184 0.563896 -0.233010 0.426068 0.169764  0.568610 0.569621  0.041934
+    JP_MiddleMgr -0.097250 0.157697 -0.616688 0.538256 -0.408520 0.214021 0.156220 -0.622517 0.533602 -0.052223
+       JP_OpsMgr -0.067136 0.155825 -0.430841 0.667123 -0.374711 0.240439 0.148192 -0.453031 0.650526 -0.035680
+        JP_Other -0.022343 0.151453 -0.147525 0.882891 -0.321288 0.276602 0.150397 -0.148560 0.881901 -0.014831
+      IND_Retail -0.268837 0.149567 -1.797435 0.074021 -0.564060 0.026386 0.172168 -1.561480 0.118411 -0.161332
+     IND_Service -0.123503 0.144030 -0.857483 0.392371 -0.407797 0.160791 0.154039 -0.801766 0.422688 -0.074993
+  IND_Technology -0.169207 0.154259 -1.096903 0.274217 -0.473692 0.135277 0.155526 -1.087969 0.276609 -0.084829
+       IND_Other -0.194907 0.154310 -1.263089 0.208267 -0.499493 0.109678 0.168564 -1.156281 0.247566 -0.104665
+  Strategic_Mean  0.261395 0.070961  3.683656 0.000308  0.121329 0.401461 0.071942  3.633410 0.000280  0.271183
+   Tactical_Mean  0.297629 0.082202  3.620723 0.000386  0.135375 0.459883 0.084099  3.539031 0.000402  0.281943
+Operational_Mean  0.334156 0.070777  4.721272 0.000005  0.194454 0.473859 0.091477  3.652902 0.000259  0.333296
+
+VIF:
+  CS_50_99                        VIF = 1.610
+  CS_100_249                      VIF = 1.537
+  JP_SeniorMgr                    VIF = 2.573
+  JP_MiddleMgr                    VIF = 3.507
+  JP_OpsMgr                       VIF = 3.354
+  JP_Other                        VIF = 4.943
+  IND_Retail                      VIF = 3.940
+  IND_Service                     VIF = 3.741
+  IND_Technology                  VIF = 2.925
+  IND_Other                       VIF = 3.358
+  Strategic_Mean                  VIF = 2.651
+  Tactical_Mean                   VIF = 2.966
+  Operational_Mean                VIF = 2.437
+
+M4: Overall BI + controls (robustness)
+  n = 186
+  R^2 = 0.6475   adj.R^2 = 0.6252
+  F = 29.053   model p = 6.881e-34
+  Durbin-Watson = 2.254
+  max VIF = 4.801
+  max |stud. resid.| = 3.100
+  max Cook's D = 0.0539
+  max leverage = 0.1830
+
+Coefficients (standard + HC3 robust + standardised):
+           term         b       se         t            p    ci_low  ci_high   se_HC3     t_HC3        p_HC3  std_beta
+       CS_50_99 -0.010573 0.086493 -0.122238 9.028516e-01 -0.181283 0.160138 0.088307 -0.119727 9.046991e-01 -0.006928
+     CS_100_249 -0.124577 0.092386 -1.348448 1.792670e-01 -0.306918 0.057763 0.102180 -1.219187 2.227734e-01 -0.074760
+   JP_SeniorMgr  0.094056 0.165106  0.569671 5.696355e-01 -0.231812 0.419924 0.166040  0.566466 5.710770e-01  0.040860
+   JP_MiddleMgr -0.103119 0.155294 -0.664022 5.075553e-01 -0.409622 0.203384 0.154280 -0.668390 5.038850e-01 -0.055375
+      JP_OpsMgr -0.063837 0.153009 -0.417212 6.770380e-01 -0.365830 0.238155 0.144786 -0.440906 6.592808e-01 -0.033927
+       JP_Other -0.029991 0.148573 -0.201862 8.402604e-01 -0.323228 0.263246 0.151039 -0.198567 8.426018e-01 -0.019908
+     IND_Retail -0.279174 0.147887 -1.887751 6.072402e-02 -0.571058 0.012709 0.169532 -1.646733 9.961292e-02 -0.167535
+    IND_Service -0.121170 0.143146 -0.846480 3.984477e-01 -0.403695 0.161355 0.153485 -0.789457 4.298449e-01 -0.073576
+ IND_Technology -0.176535 0.153092 -1.153129 2.504391e-01 -0.478691 0.125622 0.152618 -1.156710 2.473909e-01 -0.088503
+      IND_Other -0.197604 0.153476 -1.287524 1.996214e-01 -0.500519 0.105310 0.166803 -1.184660 2.361520e-01 -0.106113
+Overall_BI_Mean  0.888432 0.055206 16.093043 2.789679e-36  0.779472 0.997391 0.052276 16.994940 8.952119e-65  0.791110
+
+VIF:
+  CS_50_99                        VIF = 1.585
+  CS_100_249                      VIF = 1.517
+  JP_SeniorMgr                    VIF = 2.539
+  JP_MiddleMgr                    VIF = 3.433
+  JP_OpsMgr                       VIF = 3.264
+  JP_Other                        VIF = 4.801
+  IND_Retail                      VIF = 3.888
+  IND_Service                     VIF = 3.729
+  IND_Technology                  VIF = 2.907
+  IND_Other                       VIF = 3.353
+  Overall_BI_Mean                 VIF = 1.193
+
+M5: Managerial + Operational + controls (robustness)
+  n = 186
+  R^2 = 0.6482   adj.R^2 = 0.6238
+  F = 26.562   model p = 3.218e-33
+  Durbin-Watson = 2.250
+  max VIF = 4.889
+  max |stud. resid.| = 3.118
+  max Cook's D = 0.0775
+  max leverage = 0.1843
+
+Coefficients (standard + HC3 robust + standardised):
+              term         b       se         t            p    ci_low  ci_high   se_HC3     t_HC3        p_HC3  std_beta
+          CS_50_99 -0.016741 0.087279 -0.191807 8.481185e-01 -0.189011 0.155529 0.089241 -0.187591 8.511973e-01 -0.010969
+        CS_100_249 -0.130366 0.093074 -1.400673 1.631029e-01 -0.314073 0.053341 0.105011 -1.241455 2.144377e-01 -0.078234
+      JP_SeniorMgr  0.100672 0.165792  0.607217 5.445028e-01 -0.226564 0.427908 0.165354  0.608827 5.426390e-01  0.043734
+      JP_MiddleMgr -0.093075 0.156508 -0.594698 5.528222e-01 -0.401986 0.215836 0.152788 -0.609177 5.424072e-01 -0.049981
+         JP_OpsMgr -0.060436 0.153403 -0.393967 6.940903e-01 -0.363219 0.242347 0.143183 -0.422088 6.729605e-01 -0.032120
+          JP_Other -0.018065 0.150209 -0.120268 9.044103e-01 -0.314543 0.278413 0.147693 -0.122317 9.026480e-01 -0.011992
+        IND_Retail -0.268967 0.149164 -1.803158 7.310365e-02 -0.563384 0.025449 0.170673 -1.575920 1.150442e-01 -0.161410
+       IND_Service -0.121318 0.143414 -0.845929 3.987611e-01 -0.404384 0.161748 0.154142 -0.787053 4.312507e-01 -0.073666
+    IND_Technology -0.171452 0.153619 -1.116087 2.659326e-01 -0.474661 0.131757 0.153238 -1.118862 2.631990e-01 -0.085954
+         IND_Other -0.194183 0.153872 -1.261977 2.086557e-01 -0.497892 0.109525 0.167588 -1.158693 2.465815e-01 -0.104276
+Managerial_BI_Mean  0.555594 0.072138  7.701848 9.920174e-13  0.413211 0.697978 0.081202  6.842113 7.803365e-12  0.516280
+  Operational_Mean  0.336214 0.070172  4.791245 3.549347e-06  0.197709 0.474718 0.089818  3.743296 1.816224e-04  0.335348
+
+VIF:
+  CS_50_99                        VIF = 1.608
+  CS_100_249                      VIF = 1.534
+  JP_SeniorMgr                    VIF = 2.551
+  JP_MiddleMgr                    VIF = 3.473
+  JP_OpsMgr                       VIF = 3.269
+  JP_Other                        VIF = 4.889
+  IND_Retail                      VIF = 3.940
+  IND_Service                     VIF = 3.729
+  IND_Technology                  VIF = 2.917
+  IND_Other                       VIF = 3.357
+  Managerial_BI_Mean              VIF = 2.210
+  Operational_Mean                VIF = 2.409
+  [saved: tables_v30/T13_regression_all_models.csv]
+
+======================================================================
+13. SENSITIVITY: EXCLUDE STRAIGHT-LINERS
+======================================================================
+
+n after excluding straight-liners = 171
+
+M3_sensitivity: Three BI levels + controls (excluding straight-liners)
+  n = 171
+  R^2 = 0.6207   adj.R^2 = 0.5893
+  F = 19.761   model p = 7.779e-27
+  Durbin-Watson = 2.246
+  max VIF = 4.685
+  max |stud. resid.| = 3.006
+  max Cook's D = 0.0719
+  max leverage = 0.1948
+
+Coefficients (standard + HC3 robust + standardised):
+            term         b       se         t        p    ci_low  ci_high   se_HC3     t_HC3    p_HC3  std_beta
+        CS_50_99  0.002036 0.096134  0.021179 0.983130 -0.187846 0.191918 0.100487  0.020261 0.983835  0.001304
+      CS_100_249 -0.135758 0.098556 -1.377463 0.170330 -0.330426 0.058910 0.107664 -1.260941 0.207330 -0.082685
+    JP_SeniorMgr  0.135798 0.178535  0.760623 0.448023 -0.216842 0.488437 0.181313  0.748968 0.453876  0.057488
+    JP_MiddleMgr -0.113003 0.167091 -0.676299 0.499846 -0.443039 0.217032 0.164195 -0.688227 0.491310 -0.060072
+       JP_OpsMgr -0.063654 0.166335 -0.382685 0.702471 -0.392197 0.264889 0.156065 -0.407868 0.683371 -0.032612
+        JP_Other -0.013239 0.158954 -0.083290 0.933727 -0.327203 0.300724 0.154270 -0.085819 0.931610 -0.008862
+      IND_Retail -0.314836 0.162747 -1.934508 0.054849 -0.636292 0.006621 0.183619 -1.714611 0.086417 -0.188063
+     IND_Service -0.153723 0.155897 -0.986056 0.325623 -0.461649 0.154203 0.161636 -0.951044 0.341582 -0.094733
+  IND_Technology -0.219821 0.169915 -1.293712 0.197665 -0.555435 0.115793 0.171314 -1.283148 0.199440 -0.107974
+       IND_Other -0.239667 0.168924 -1.418781 0.157945 -0.573324 0.093991 0.183439 -1.306521 0.191375 -0.128852
+  Strategic_Mean  0.261409 0.074150  3.525386 0.000554  0.114948 0.407870 0.072335  3.613864 0.000302  0.271242
+   Tactical_Mean  0.293678 0.086094  3.411130 0.000823  0.123626 0.463730 0.084435  3.478142 0.000505  0.276530
+Operational_Mean  0.324752 0.074536  4.356985 0.000024  0.177530 0.471975 0.092798  3.499562 0.000466  0.323895
+
+VIF:
+  CS_50_99                        VIF = 1.568
+  CS_100_249                      VIF = 1.491
+  JP_SeniorMgr                    VIF = 2.364
+  JP_MiddleMgr                    VIF = 3.266
+  JP_OpsMgr                       VIF = 3.006
+  JP_Other                        VIF = 4.685
+  IND_Retail                      VIF = 3.912
+  IND_Service                     VIF = 3.820
+  IND_Technology                  VIF = 2.883
+  IND_Other                       VIF = 3.414
+  Strategic_Mean                  VIF = 2.450
+  Tactical_Mean                   VIF = 2.720
+  Operational_Mean                VIF = 2.287
+
+======================================================================
+14. SENSITIVITY: BI-ANCHORED DMQ ITEM REMOVED
+======================================================================
+
+M_DMQ_3item: BI_Improves_Decisions removed, DMQ from 3 items
+  n = 186
+  R^2 = 0.5570   adj.R^2 = 0.5497
+  F = 76.270   model p = 5.417e-32
+  Durbin-Watson = 2.165
+  max VIF = 2.804
+  max |stud. resid.| = 3.420
+  max Cook's D = 0.1995
+  max leverage = 0.0967
+
+Coefficients (standard + HC3 robust + standardised):
+            term        b       se        t        p   ci_low  ci_high   se_HC3    t_HC3    p_HC3  std_beta
+  Strategic_Mean 0.232874 0.078318 2.973456 0.003344 0.078347 0.387402 0.080924 2.877695 0.004006  0.231754
+   Tactical_Mean 0.281372 0.090923 3.094614 0.002282 0.101973 0.460771 0.093052 3.023811 0.002496  0.255687
+Operational_Mean 0.361028 0.075338 4.792101 0.000003 0.212380 0.509677 0.101892 3.543238 0.000395  0.345431
+
+VIF:
+  Strategic_Mean                  VIF = 2.496
+  Tactical_Mean                   VIF = 2.804
+  Operational_Mean                VIF = 2.135
+
+M_DMQ_3item_controls: BI_Improves_Decisions removed + controls
+  n = 186
+  R^2 = 0.5768   adj.R^2 = 0.5448
+  F = 18.030   model p = 7.266e-26
+  Durbin-Watson = 2.160
+  max VIF = 4.943
+  max |stud. resid.| = 3.486
+  max Cook's D = 0.1035
+  max leverage = 0.1875
+
+Coefficients (standard + HC3 robust + standardised):
+            term         b       se         t        p    ci_low  ci_high   se_HC3     t_HC3    p_HC3  std_beta
+        CS_50_99 -0.022452 0.100145 -0.224192 0.822874 -0.220124 0.175220 0.104529 -0.214790 0.829931 -0.014112
+      CS_100_249 -0.158341 0.106822 -1.482293 0.140092 -0.369191 0.052509 0.119931 -1.320266 0.186746 -0.091152
+    JP_SeniorMgr  0.055553 0.190934  0.290952 0.771439 -0.321322 0.432427 0.183768  0.302297 0.762426  0.023150
+    JP_MiddleMgr -0.126594 0.180349 -0.701941 0.483665 -0.482577 0.229388 0.179595 -0.704888 0.480880 -0.065212
+       JP_OpsMgr -0.069557 0.178208 -0.390315 0.696787 -0.421313 0.282199 0.162788 -0.427287 0.669170 -0.035462
+        JP_Other -0.040420 0.173208 -0.233362 0.815758 -0.382307 0.301466 0.164074 -0.246353 0.805409 -0.025738
+      IND_Retail -0.288505 0.171051 -1.686658 0.093482 -0.626134 0.049125 0.191227 -1.508704 0.131374 -0.166082
+     IND_Service -0.117808 0.164719 -0.715207 0.475451 -0.442938 0.207323 0.172997 -0.680984 0.495882 -0.068621
+  IND_Technology -0.175526 0.176417 -0.994946 0.321160 -0.523747 0.172696 0.170659 -1.028518 0.303706 -0.084412
+       IND_Other -0.145050 0.176476 -0.821929 0.412255 -0.493387 0.203286 0.189162 -0.766804 0.443198 -0.074719
+  Strategic_Mean  0.242713 0.081154  2.990781 0.003191  0.082528 0.402898 0.080959  2.997975 0.002718  0.241545
+   Tactical_Mean  0.302336 0.094009  3.216029 0.001553  0.116776 0.487896 0.098421  3.071860 0.002127  0.274737
+Operational_Mean  0.332264 0.080943  4.104896 0.000062  0.172494 0.492034 0.109978  3.021193 0.002518  0.317910
+
+VIF:
+  CS_50_99                        VIF = 1.610
+  CS_100_249                      VIF = 1.537
+  JP_SeniorMgr                    VIF = 2.573
+  JP_MiddleMgr                    VIF = 3.507
+  JP_OpsMgr                       VIF = 3.354
+  JP_Other                        VIF = 4.943
+  IND_Retail                      VIF = 3.940
+  IND_Service                     VIF = 3.741
+  IND_Technology                  VIF = 2.925
+  IND_Other                       VIF = 3.358
+  Strategic_Mean                  VIF = 2.651
+  Tactical_Mean                   VIF = 2.966
+  Operational_Mean                VIF = 2.437
+
+======================================================================
+15. SAVE PROCESSED DATASET
+======================================================================
+  Saved: BI_DMQ_data_v30_processed.csv
+
+======================================================================
+16. SUMMARY TABLE OF KEY RESULTS
+======================================================================
+                                       metric          value
+                                            n            186
+                     Cronbach alpha Strategic            0.8
+                      Cronbach alpha Tactical          0.768
+                   Cronbach alpha Operational          0.781
+                           Cronbach alpha DMQ          0.845
+                                          KMO          0.936
+                   Harman 1-factor % variance          54.42
+                             CFA 4-factor CFI          0.965
+                             CFA 4-factor TLI          0.954
+                           CFA 4-factor RMSEA          0.065
+                         CFA 4-factor chi2/df          1.773
+          Primary model R^2 (M2, no controls)           0.63
+                       Primary model adj. R^2          0.624
+Controlled robustness R^2 (M3, with controls)          0.648
+               Controlled robustness adj. R^2          0.622
+         Sensitivity (no straight-liners) R^2 see section 13
+  [saved: tables_v30/T14_summary.csv]
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================
+
+Full log: analysis_output_v30.txt
+Tables directory: tables_v30/
