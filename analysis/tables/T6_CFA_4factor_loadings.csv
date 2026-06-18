@@ -1,0 +1,14 @@
+,item,factor,std_loading
+0,Strategic_BI_Availability,Strategic,0.7061440632724904
+1,Strategic_BI_Alternatives,Strategic,0.8317857356460469
+2,Strategic_BI_Alignment,Strategic,0.7404561993720137
+3,Tactical_BI_Availability,Tactical,0.7296570995889049
+4,Tactical_BI_Resource_Alloc,Tactical,0.7552612922907533
+5,Tactical_BI_Data_Decisions,Tactical,0.6969573971342187
+6,Operational_BI_Availability,Operational,0.7203221346642039
+7,Operational_BI_Agility,Operational,0.7634551861036162
+8,Operational_BI_Quality,Operational,0.7359562101979256
+9,BI_Improves_Decisions,DMQ,0.7999877074488315
+10,BI_Speed_Accuracy,DMQ,0.7972053151975909
+11,BI_Data_Inform,DMQ,0.7531190752218678
+12,BI_Alternative_Solutions,DMQ,0.6865034900533639

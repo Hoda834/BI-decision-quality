@@ -1,0 +1,8 @@
+,Strategic_Mean,Tactical_Mean,Operational_Mean,DMQ_Mean,Challenges_Mean,Overall_BI_Mean,Managerial_BI_Mean
+Strategic_Mean,1.0,0.694,0.594,0.638,0.419,0.87,0.927
+Tactical_Mean,0.694,1.0,0.658,0.635,0.416,0.877,0.903
+Operational_Mean,0.594,0.658,1.0,0.677,0.356,0.858,0.668
+DMQ_Mean,0.638,0.635,0.677,1.0,0.364,0.735,0.682
+Challenges_Mean,0.419,0.416,0.356,0.364,1.0,0.459,0.45
+Overall_BI_Mean,0.87,0.877,0.858,0.735,0.459,1.0,0.949
+Managerial_BI_Mean,0.927,0.903,0.668,0.682,0.45,0.949,1.0

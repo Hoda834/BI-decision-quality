@@ -1,0 +1,17 @@
+,metric,value
+0,n,186
+1,Cronbach alpha Strategic,0.8
+2,Cronbach alpha Tactical,0.768
+3,Cronbach alpha Operational,0.781
+4,Cronbach alpha DMQ,0.845
+5,KMO,0.936
+6,Harman 1-factor % variance,54.42
+7,CFA 4-factor CFI,0.965
+8,CFA 4-factor TLI,0.954
+9,CFA 4-factor RMSEA,0.065
+10,CFA 4-factor chi2/df,1.773
+11,"Primary model R^2 (M2, no controls)",0.63
+12,Primary model adj. R^2,0.624
+13,"Controlled robustness R^2 (M3, with controls)",0.648
+14,Controlled robustness adj. R^2,0.622
+15,Sensitivity (no straight-liners) R^2,see section 13
