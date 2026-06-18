@@ -12,22 +12,13 @@
 *         Items: 1=Strongly Disagree ... 5=Strongly Agree.
 * ===================================================================.
 
-* IMPORT (edit the path to your machine; or File > Import Data > CSV).
-GET DATA /TYPE=TXT
-  /FILE="BI_DMQ_data_coded_n178_SPSS_ready_ID_preserved.csv"
-  /DELIMITERS="," /QUALIFIER='"' /FIRSTCASE=2
-  /VARIABLES=
-    ID F6.2
-    Company_Size F1.0 Job_Position F1.0 Industry F1.0
-    Strategic_BI_Availability F1.0 Strategic_BI_Alternatives F1.0 Strategic_BI_Alignment F1.0
-    Tactical_BI_Availability F1.0 Tactical_BI_Resource_Alloc F1.0 Tactical_BI_Data_Decisions F1.0
-    Operational_BI_Availability F1.0 Operational_BI_Agility F1.0 Operational_BI_Quality F1.0
-    BI_Improves_Decisions F1.0 BI_Speed_Accuracy F1.0 BI_Data_Inform F1.0 BI_Alternative_Solutions F1.0
-    BI_Cost_Barrier F1.0 BI_Training_Limit F1.0 BI_Flexibility_Issue F1.0 BI_Data_Integration_Issue F1.0.
+* ===================================================================.
+* LOAD DATA. Easiest: open BI_DMQ_data_coded.sav in SPSS first, then
+* run this file from the COMPUTE lines below. Or edit the path here to
+* the full location of the .sav and run the whole file.
+* ===================================================================.
+GET FILE='BI_DMQ_data_coded.sav'.
 DATASET NAME DataSet178 WINDOW=FRONT.
-VALUE LABELS Company_Size 1 '<50' 2 '50-99' 3 '99-250'.
-VALUE LABELS Job_Position 1 'CEO' 2 'Senior Manager' 3 'Middle Manager' 4 'Operational Manager' 5 'Other'.
-VALUE LABELS Industry 1 'Manufacturing' 2 'Retail' 3 'Service' 4 'Technology' 5 'Other'.
 
 COMPUTE Strategic_Mean   = MEAN(Strategic_BI_Availability,Strategic_BI_Alternatives,Strategic_BI_Alignment).
 COMPUTE Tactical_Mean    = MEAN(Tactical_BI_Availability,Tactical_BI_Resource_Alloc,Tactical_BI_Data_Decisions).
