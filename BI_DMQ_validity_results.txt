@@ -1,0 +1,47 @@
+======================================================================
+Validity analyses  (n = 178)
+======================================================================
+
+--- 1. Cronbach's alpha (cross-check vs SPSS) ---
+  Strategic    alpha = 0.795  (k=3)
+  Tactical     alpha = 0.760  (k=3)
+  Operational  alpha = 0.773  (k=3)
+  DMQ          alpha = 0.843  (k=4)
+
+--- 2a. Per-construct single-factor extraction (% variance) ---
+  Strategic    % variance = 57.29   loadings = [0.702 0.861 0.696]
+  Tactical     % variance = 52.17   loadings = [0.655 0.805 0.698]
+  Operational  % variance = 53.68   loadings = [0.695 0.771 0.73 ]
+  DMQ          % variance = 57.58   loadings = [0.745 0.836 0.755 0.693]
+
+--- 2b. Harman single-factor (CMB) ---
+  Single factor explains 49.78% of variance (OK, < 50%)
+
+--- 3. CFA fit: four-factor vs one-factor ---
+  model            chi2   df    CFI    TLI  RMSEA      AIC
+  four-factor     99.88   59  0.966  0.955  0.063     62.9
+  one-factor     145.48   65  0.933  0.920  0.084     50.4
+
+--- 4. Convergent validity (standardised CFA loadings) ---
+  construct       AVE     CR  sqrtAVE  min load
+  Strategic     0.571  0.799    0.756     0.703
+  Tactical      0.517  0.763    0.719     0.687
+  Operational   0.536  0.776    0.732     0.713
+  DMQ           0.574  0.843    0.758     0.683
+
+--- 5. Fornell-Larcker (diagonal = sqrt(AVE), off = factor corr) ---
+               Strategic  Tactical  Operational    DMQ
+  Strategic        0.756     0.956        0.808  0.843
+  Tactical         0.956     0.719        0.891  0.879
+  Operational      0.808     0.891        0.732  0.893
+  DMQ              0.843     0.879        0.893  0.758
+  Fornell-Larcker breaches: Strategic-Tactical, Strategic-Operational, Strategic-DMQ, Tactical-Operational, Tactical-DMQ, Operational-DMQ
+
+--- 6. HTMT (thresholds: 0.85 strict, 0.90 lenient) ---
+  Strategic    - Tactical     HTMT = 0.957  <-- exceeds 0.90
+  Strategic    - Operational  HTMT = 0.827
+  Strategic    - DMQ          HTMT = 0.852  <-- exceeds 0.85
+  Tactical     - Operational  HTMT = 0.897  <-- exceeds 0.85
+  Tactical     - DMQ          HTMT = 0.887  <-- exceeds 0.85
+  Operational  - DMQ          HTMT = 0.883  <-- exceeds 0.85
+  max HTMT = 0.957
